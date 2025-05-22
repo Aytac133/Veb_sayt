@@ -1,0 +1,91 @@
+<!-- ders.html -->
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <title>Təqvim və planlaşdırıcı</title>
+  <link rel="stylesheet" href="telebeler.css">
+  <style>
+    .planner {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: left;
+    }
+    .planner input, .planner button {
+      padding: 10px;
+      margin: 10px 0;
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    .task-list {
+      list-style: none;
+      padding: 0;
+    }
+    .task-list li {
+      padding: 10px;
+      background-color: #e7f8f1;
+      margin-bottom: 8px;
+      border-left: 5px solid #00cc66;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">🎓 Təhsil Portalı</div>
+    <nav>
+      <ul>
+        <li><a href="veb.html">Ana Səhifə</a></li>
+        <li><a href="veb.html">Üzvlər</a></li>
+        <li><a href="veb.html">Xüsusiyyətlər</a></li>
+        <li><a href="veb.html">Əlaqə</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="student-section">
+      <h1>Təqvim və Planlaşdırıcı</h1>
+      <p>Dərslərinizi, imtahanlarınızı və tapşırıqlarınızı planlaşdırın və idarə edin.</p>
+
+      <div class="planner">
+        <h3>Yeni Tapşırıq Əlavə Et</h3>
+        <input type="text" id="taskInput" placeholder="Tapşırıq adı">
+        <input type="date" id="taskDate">
+        <button onclick="addTask()">Əlavə et</button>
+
+        <h3>Planlaşdırılmış Tapşırıqlar</h3>
+        <ul id="taskList" class="task-list"></ul>
+      </div>
+    </section>
+  </main>
+  
+  <script>
+    function addTask() {
+      const taskInput = document.getElementById("taskInput");
+      const taskDate = document.getElementById("taskDate");
+      const taskList = document.getElementById("taskList");
+
+      const taskText = taskInput.value.trim();
+      const taskDateValue = taskDate.value;
+
+      if (taskText && taskDateValue) {
+        const li = document.createElement("li");
+        li.textContent = `${taskDateValue}: ${taskText}`;
+        taskList.appendChild(li);
+
+        taskInput.value = "";
+        taskDate.value = "";
+      } else {
+        alert("Zəhmət olmasa həm tarix, həm də tapşırıq daxil edin.");
+      }
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+
+
