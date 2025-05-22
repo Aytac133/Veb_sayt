@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Azərbaycan Universitetləri</title>
+  <style>
+    /* Ümumi Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #eef2f7;
+      color: #2c3e50;
+      line-height: 1.6;
+      min-height: 100vh;
+      padding: 2rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      color: #1976d2;
+      margin-bottom: 2rem;
+      font-size: 2.5rem;
+      text-align: center;
+    }
+
+    .university-list {
+      max-width: 900px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .university-card {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .university-card:hover {
+      box-shadow: 0 12px 30px rgba(33, 150, 243, 0.4);
+    }
+
+    .university-card img {
+      width: 100%;
+      max-width: 280px;
+      height: 160px;
+      object-fit: contain;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      background-color: #f5f5f5;
+      padding: 0.5rem;
+    }
+
+    .university-card h2 {
+      font-size: 1.4rem;
+      color: #1976d2;
+      margin-bottom: 0.8rem;
+      text-align: center;
+    }
+
+    .university-card p {
+      font-size: 1rem;
+      color: #444;
+      text-align: center;
+      line-height: 1.4;
+    }
+
+    /* Responsive */
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+      .university-card img {
+        height: 140px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Azərbaycan Universitetləri</h1>
+
+  <div class="university-list">
+    
+    <div class="university-card">
+      <h2>Bakı Dövlət Universiteti</h2>
+      <img src="Bakı dövlət.webp" alt="Bakı Dövlət Universiteti" />
+      <p>Bakı Dövlət Universiteti Azərbaycanda ən böyük və qədim universitetlərdən biridir. Burada müxtəlif fakültələr mövcuddur və yüksək təhsil keyfiyyəti təmin edilir.</p>
+    </div>
+
+    <div class="university-card">
+      <h2>Azərbaycan Texniki Universiteti</h2>
+      <img src= "download.jfif" alt="Azərbaycan Texniki Universiteti" />
+      <p>Azərbaycan Texniki Universiteti mühəndislik və texniki sahələrdə ixtisaslaşmışdır. Müasir avadanlıqlarla təchiz olunmuş və təcrübəli müəllim heyəti fəaliyyət göstərir.</p>
+    </div>
+
+    <div class="university-card">
+      <h2>Azərbaycan Dövlət İqtisad Universiteti</h2>
+      <img src="download (1).jfif" alt="Azərbaycan Dövlət İqtisad Universiteti" />
+      <p>Azərbaycan Dövlət İqtisad Universiteti iqtisadiyyat, biznes və maliyyə sahəsində ixtisaslaşır. Universitetdə geniş imkanlar və müasir təhsil mühiti mövcuddur.</p>
+    </div>
+
+    <div class="university-card">
+      <h2>Azərbaycan Tibb Universiteti</h2>
+      <img src="download (2).jfif" alt="Azərbaycan Tibb Universiteti" />
+      <p>Azərbaycan Tibb Universiteti tibb sahəsində yüksək keyfiyyətli təhsil verir və tələbələrə geniş klinik təcrübə imkanları yaradır.</p>
+    </div>
+
+    <div class="university-card">
+      <h2>Bakı Avrasiya Üniversteti</h2>
+      <img src="bakı avrasiya.jfif" alt="Azərbaycan Tibb Universiteti" />
+      <p>Azərbaycanda fəaliyyət göstərən özəl ali təhsil müəssisəsidir. Universitet humanitar, iqtisadi və sosial sahələr üzrə mütəxəssis hazırlığı ilə məşğuldur.</p>
+    </div>
+    <div class="university-card">
+      <h2>Azərbaycan Memarlıq və İnşaat Üniversteti</h2>
+      <img src="azmiu.jfif" alt="Azərbaycan Tibb Universiteti" />
+      <p> Azərbaycanda memarlıq və inşaat sahəsində ixtisaslaşmış yeganə ali təhsil müəssisəsidir. Universitet tələbələrə mühəndislik, dizayn və şəhərsalma kimi sahələrdə nəzəri və praktiki biliklər verir.</p>
+    </div>
+    <div class="university-card">
+      <h2>Azərbaycan Dövlət Pedoqoji Üniversteti</h2>
+      <img src="pedoqoji.jfif" alt="Azərbaycan Tibb Universiteti" />
+      <p> Müəllim hazırlığı üzrə ixtisaslaşmış, ölkənin ən qədim və nüfuzlu pedaqoji ali məktəblərindən biridir.</p>
+    </div>
+    <!-- İstəsəniz, əlavə universitetləri bura əlavə edə bilərsiniz -->
+
+  </div>
+  <a href="veb_html.html">← Geri qayıt</a>
+</body>
+</html>

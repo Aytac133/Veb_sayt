@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tələbə Həyatı - Təhsil Portalı</title>
+  <link rel="stylesheet" href="telebeler.css" />
+  <style>
+    .student-section h1 {
+      font-size: 2.5rem;
+      color: #2ba8ff;
+      margin-bottom: 20px;
+    }
+
+    .student-section p {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 40px;
+    }
+
+    .resources {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+      padding: 0 10px;
+    }
+
+    .resource-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+      padding: 25px;
+      text-align: left;
+      transition: transform 0.3s ease;
+    }
+
+    .resource-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .resource-card h3 {
+      font-size: 20px;
+      color: #00b36b;
+      margin-bottom: 10px;
+    }
+
+    .resource-card p {
+      font-size: 15px;
+      color: #444;
+    }
+
+    .emoji {
+      font-size: 24px;
+      margin-right: 8px;
+    }
+
+    #backBtn {
+      margin-top: 50px;
+      padding: 12px 24px;
+      background-color: #00cc66;
+      border: none;
+      color: white;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    #backBtn:hover {
+      background-color: #00994d;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">🎓 Təhsil Portalı</div>
+    <nav>
+      <ul>
+        <li><a href="veb.html">Ana Səhifə</a></li>
+        <li><a href="veb.html">Üzvlər</a></li>
+        <li><a href="veb.html">Xüsusiyyətlər</a></li>
+        <li><a href="veb.html">Əlaqə</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+  <section class="student-section">
+    <h1>Tələbə Həyatı</h1>
+    <p>Universitet dövrünü daha məhsuldar və əyləncəli keçirmək üçün imkanlar</p>
+
+    <div class="resources">
+      <div class="resource-card" onclick="location.href='klub.html';" style="cursor:pointer;">
+        <h3><span class="emoji">🤝</span>Tələbə Klubları</h3>
+        <p>İT, debat, musiqi və digər maraqlarınıza uyğun klublar sizi gözləyir.</p>
+      </div>
+
+      <div class="resource-card" onclick="location.href='sosial.html';" style="cursor:pointer;">
+        <h3><span class="emoji">🎉</span>Sosial Fəaliyyətlər</h3>
+        <p>Konsertlər, tədbirlər və sosial layihələrdə aktiv iştirak edin.</p>
+      </div>
+
+
+      <div class="resource-card" onclick="location.href='könüllü.html';" style="cursor:pointer;">
+        <h3><span class="emoji">💡</span>Könüllülük və Liderlik</h3>
+        <p>Faydalı təcrübə və liderlik bacarıqları üçün sosial layihələrə qatılın.</p>
+      </div>
+
+      <div class="resource-card" onclick="location.href='seminar.html';" style="cursor:pointer;">
+        <h3><span class="emoji">📚</span>Konfrans və Seminarlar</h3>
+        <p>Elmi, texnoloji və innovasiya mövzusunda tədbirlərə qoşulun.</p>
+      </div>
+
+      <div class="resource-card" onclick="location.href='mentor.html';" style="cursor:pointer;">
+        <h3><span class="emoji">🌟</span>Mentorluq Proqramları</h3>
+        <p>Uğurlu tələbələr və məzunlarla mentor əlaqələri qurun.</p>
+      </div>
+    </div>
+
+    <div style="text-align: center;">
+      <button id="backBtn">← Geri</button>
+    </div>
+  </section>
+</main>
+
+  <script>
+    document.getElementById("backBtn").addEventListener("click", function () {
+      window.history.back();
+    });
+  </script>
+</body>
+</html>

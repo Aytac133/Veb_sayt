@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <title>Elektron kitabxana</title>
+  <link rel="stylesheet" href="telebeler.css">
+  <style>
+    .library-section {
+  padding: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.library-section h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.library-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.library-intro {
+  margin-bottom: 30px;  /* Aranı açır */
+  font-size: 1.2rem;
+  color: #444;
+}
+
+.book-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+}
+
+.book-card h3 {
+  font-size: 1.1rem;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.pdf-link {
+  text-decoration: none;
+  color: #fff;
+  background-color: #007acc;
+  padding: 8px 14px;
+  border-radius: 6px;
+  display: inline-block;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.pdf-link:hover {
+  background-color: #005f99;
+}
+
+.library-section {
+  padding-bottom: 60px;
+}
+
+
+@media (max-width: 600px) {
+  .library-section {
+    padding: 20px;
+  }
+
+  .pdf-link {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+}
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">🎓 Təhsil Portalı</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Ana Səhifə</a></li>
+        <li><a href="web.html">Üzvlər</a></li>
+        <li><a href="#">Xüsusiyyətlər</a></li>
+        <li><a href="#">Əlaqə</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="library-section">
+      <h1>Elektron Kitabxana</h1>
+      <h2 class="library-intro">Bu faydalı kitabları götürə və oxuya bilərsiniz.</h2>
+
+      <div class="library-grid">
+        <div class="book-card">
+          <h3>"The Art of Cyberwarfare" – Jon DiMaggio</h3>
+          <a href="pdfs/the art of cyber.pdf" target="_blank" class="pdf-link">📄 PDF-i Aç</a>
+        </div>
+
+        <div class="book-card">
+          <h3>The Web Application Hacker's Handbook</h3>
+          <a href="pdfs/web application.pdf" target="_blank" class="pdf-link">📄 PDF-i Aç</a>
+        </div>
+
+        <div class="book-card">
+          <h3>"Cybersecurity and Cyberwar: What Everyone Needs to Know" – P.W. Singer & Allan Friedman(Yüksək)</h3>
+          <a href="pdfs/cybersecurity.pdf" target="_blank" class="pdf-link">📄 PDF-i Aç</a>
+        </div>
+
+        <div class="book-card">
+          <h3>"HTML & CSS: Design and Build Websites" – Jon Duckett </h3>
+          <a href="https://archive.org/details/html-css_202402/page/n3/mode/2up" target="_blank" class="pdf-link">
+            📄 PDF-i Aç
+          </a>
+        </div>
+
+        <div class="book-card">
+          <h3>"JavaScript and JQuery" – Jon Duckett</h3>
+          <a href="https://archive.org/details/toaz.info-javascript-jquery-jon-duckett-pr_4c70e305b4d600415912c0b714295db1" target="_blank" class="pdf-link">📄 PDF-i Aç</a>
+        </div>
+
+        <div class="book-card">
+          <h3>"Eloquent JavaScript" – Marijn Haverbeke</h3>
+          <a href="pdfs/Eloquent_JavaScript_small.pdf" target="_blank" class="pdf-link">📄 PDF-i Aç</a>
+        </div>
+
+        <div class="book-card">
+          <h3>"Computer Networking: Principles, Protocols and Practice" - Olivier Bonaventure</h3>
+          <a href="pdfs/Computer-Networking-Principles-Bonaventure-1-30-31-OTC1.pdf" target="_blank" class="pdf-link">📄 PDF-i Aç</a>
+        </div>
+
+        <div class="book-card">
+          <h3>"Networking all-in-one for dummies" - Doug Lowe</h3>
+          <a href="pdfs/ND6.pdf" target="_blank" class="pdf-link">📄 PDF-i Aç</a>
+        </div>
+
+        <div class="book-card">
+          <h3>"Computer Networking: A Top-Down Approach" – Kurose & Ross</h3>
+          <a href="pdfs/Computer-Networking-Principles-Bonaventure-1-30-31-OTC1.pdf" target="_blank" class="pdf-link">📄 PDF-i Aç</a>
+        </div>
+
+        <div class="book-card">
+          <h3>"Network Warrior" – Gary A. Donahue</h3>
+          <a href="pdfs/O'Reilly Network Warrior.pdf" target="_blank" class="pdf-link">📄 PDF-i Aç</a>
+        </div>
+
+        <div class="book-card">
+          <h3>"TCP/IP Illustrated, Volume 1" – W. Richard Stevens pdf</h3>
+          <a href="pdfs/Richard_Stevens-TCP-IP_Illustrated-EN.pdf" target="_blank" class="pdf-link">📄 PDF-i Aç</a>
+        </div>
+
+        <div class="book-card">
+          <h3>"Cryptography and Network Security" – William Stallings</h3>
+          <a href="pdfs/Cryptography_and_Network_Security.pdf" target="_blank" class="pdf-link">📄 PDF-i Aç</a>
+        </div>
+
+        <div class="book-card">
+          <h3>"Understanding Cryptography" – Christof Paar & Jan Pelzl</h3>
+          <a href="pdfs/2.understanding-cryptography-by-christof-paar-.pdf" target="_blank" class="pdf-link">📄 PDF-i Aç</a>
+        </div>
+
+        <div class="book-card">
+          <h3>"Network Security: Private Communication in a Public World" – Charlie Kaufman</h3>
+          <a href="https://archive.org/details/networksecurityp00kauf" target="_blank" class="pdf-link">📄 PDF-i Aç</a>
+        </div>
+
+        <div class="book-card">
+          <h3>"The Art of Deception" – Kevin Mitnick</h3>
+          <a href="pdfs/The_Art_of_Deception_by_Kelvin_Mitnick.pdf" target="_blank" class="pdf-link">📄 PDF-i Aç</a>
+        </div>
+        <!-- Daha çox kitab əlavə edə bilərsən -->
+      </div>
+    </section>
+  </main>
+</body>
+</html>
+
+
+
+
+
+
