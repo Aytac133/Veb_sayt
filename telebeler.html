@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tələbələr - Təhsil Portalı</title>
+  <link rel="stylesheet" href="telebeler.css">
+</head>
+<body>
+  <header>
+    <div class="logo">🎓 Təhsil Portalı</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Ana Səhifə</a></li>
+        <li><a href="web.html">Üzvlər</a></li>
+        <li><a href="#">Xüsusiyyətlər</a></li>
+        <li><a href="#">Əlaqə</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="student-section">
+      <h1>Tələbələr üçün Resurslar</h1>
+      <p>Təhsilinizi dəstəkləmək üçün faydalı materiallar və alətlər</p>
+
+      <div class="resources" id="resources">
+        <a href="dərs.html" class="resource-card" onclick="showDetail('ders')">
+          <h3>Dərs materialları</h3>
+          <p>Fənlər üzrə mövzu, test, və izahlı dərslər.</p>
+        </a>
+        <a href="library.html" class="resource-card" onclick="showDetail('kitabxana')">
+          <h3>Elektron kitabxana</h3>
+          <p>Kitablar, jurnallar və akademik məqalələrə çıxış.</p>
+        </a>
+        <a href="teqvim.html" class="resource-card" onclick="showDetail('teqvim')">
+          <h3>Təqvim və planlaşdırıcı</h3>
+          <p>İmtahanlar və tapşırıqlar üçün vaxt cədvəli.</p>
+        </a>
+        <a href="staj.html" class="resource-card" onclick="showDetail('staj')">
+          <h3>Staj və karyera imkanları</h3>
+          <p>Real iş təcrübələri və işə qəbul dəstəyi.</p>
+        </a>
+        <a href="heyat.html" class="resource-card" onclick="showDetail('heyat')">
+          <h3>Tələbə həyatı</h3>
+          <p>Tələbə klubları, tədbirlər və sosial fəaliyyətlər.</p>
+        </a>
+      </div>
+      <div id="detailView" class="detail-view">
+        <h2 id="detailTitle"></h2>
+        <p id="detailContent"></p>
+        <button id="backBtn">← Geri</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="telebeler.js"></script>
+</body>
+</html>
