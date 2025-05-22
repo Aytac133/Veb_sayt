@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <title>İxtisasların Təqdimatı</title>
+  <style>
+    /* Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #eef2f7;
+      color: #2c3e50;
+      line-height: 1.6;
+      min-height: 100vh;
+      padding: 2rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      color: #1976d2;
+      margin-bottom: 2rem;
+      font-size: 2.5rem;
+      text-align: center;
+    }
+
+    .specialization-list {
+      max-width: 900px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .specialization-card {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: box-shadow 0.3s ease;
+      text-align: center;
+    }
+
+    .specialization-card:hover {
+      box-shadow: 0 12px 30px rgba(33, 150, 243, 0.4);
+    }
+
+    .specialization-card img {
+      width: 100%;
+      max-width: 280px;
+      height: 160px;
+      object-fit: contain;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      background-color: #f5f5f5;
+      padding: 0.5rem;
+    }
+
+    .specialization-card h2 {
+      font-size: 1.4rem;
+      color: #1976d2;
+      margin-bottom: 0.8rem;
+    }
+
+    .specialization-card p {
+      font-size: 1rem;
+      color: #444;
+      line-height: 1.4;
+    }
+
+    /* Responsive */
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+      .specialization-card img {
+        height: 140px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>İxtisasların Təqdimatı</h1>
+
+  <div class="specialization-list">
+
+    <div class="specialization-card">
+      <h2>Komputer Elmləri</h2>
+      <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="Komputer Elmləri" />
+      <p>Bu ixtisas proqramlaşdırma, sistemlərin işləməsi və informasiya texnologiyaları sahəsində dərin biliklər verir. Komputer elmləri sahəsində mütəxəssislər proqram təminatı və texniki həllər yaradırlar.</p>
+    </div>
+
+    <div class="specialization-card">
+      <h2>Elektronika və Telekommunikasiya</h2>
+      <img src="https://th.bing.com/th/id/OIP.KtZ9HWcPAc2Uj4Lom4dBPwHaGB?cb=iwp2&rs=1&pid=ImgDetMain" alt="Elektronika və Telekommunikasiya" />
+      <p>Elektronika və telekommunikasiya ixtisası, informasiya ötürülməsi, rabitə sistemləri və mikroelektronika sahələrində təhsil verir, müasir texnologiyaları öyrədir.</p>
+    </div>
+
+    <div class="specialization-card">
+      <h2>Biznesin İdarə Olunması</h2>
+      <img src="https://cdn-icons-png.flaticon.com/512/1055/1055672.png" alt="Biznesin İdarə Olunması" />
+      <p>Bu ixtisas tələbələrə biznes strategiyaları, marketinq, maliyyə və insan resursları sahəsində biliklər təqdim edir. Gələcək menecerlər və sahibkarlar üçün ideal seçimdir.</p>
+    </div>
+
+    <div class="specialization-card">
+      <h2>Informasiya təhlükəsizliyi</h2>
+      <img src="https://th.bing.com/th/id/OIP.QFycEqxc-_TuiC58hUWh4QHaHa?cb=iwp2&rs=1&pid=ImgDetMain" alt="İnformasiya təhlükəsizliyi" />
+      <p>Kompüter sistemlərinin qorunması və kibertəhlükələrin qarşısının alınması ilə məşğul olur. Mütəxəssislər təhlükəsizlik sistemləri qurur və riskləri analiz edirlər.</p>
+    </div>
+
+    <div class="specialization-card">
+      <h2>Fizika müəllimliyi</h2>
+      <img src="https://cdn0.iconfinder.com/data/icons/physics-30/66/88_physics_lecture_teacher_class_students_thermodynamics-512.png" alt="Fizika müəllimliyi" />
+      <p>Fizika fənnini tədris edəcək müəllimlər hazırlayır. Proqram həm fizika, həm də pedaqogika biliklərini əhatə edir.</p>
+    </div>
+
+    <div class="specialization-card">
+      <h2>Tibb bacılığı</h2>
+      <img src="https://th.bing.com/th/id/OIP.RJxKGPtQ0Wmjn2yTwTNnXAHaHa?cb=iwp2&rs=1&pid=ImgDetMain" alt="Tibb bacılığı" />
+      <p>Xəstə baxımı və tibbi yardım üzrə mütəxəssislər yetişdirir. Məzunlar səhiyyə müəssisələrində çalışırlar.</p>
+    </div>
+
+    <div class="specialization-card">
+      <h2>Memarlıq</h2>
+      <img src="https://th.bing.com/th/id/OIP.PPFyfj5PVpTDL34t9MDnSAHaHa?cb=iwp2&rs=1&pid=ImgDetMain" alt="Memarlıq" />
+      <p>Binaların layihələndirilməsi və şəhərsalma üzrə ixtisasdır. Tələbələr texniki və yaradıcılıq bacarıqları qazanırlar.</p>
+    </div>
+
+    <div class="specialization-card">
+      <h2>Data Analitika</h2>
+      <img src="https://cdn-icons-png.flaticon.com/512/8909/8909414.png" alt="Data Analitika" />
+      <p> Məlumatların təhlili və vizuallaşdırılması ilə məşğul olur. Analitiklər şirkətlər üçün qərarverməyə dəstək verir.</p>
+    </div>
+
+  </div>
+  <a href="veb_html.html">← Geri qayıt</a>
+</body>
+</html>
+

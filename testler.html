@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Təcrübə Testləri</title>
+  <style>
+    /* Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #eef2f7;
+      color: #2c3e50;
+      min-height: 100vh;
+      padding: 2rem 1rem;
+      display: flex;
+      justify-content: center;
+    }
+
+    main {
+      max-width: 700px;
+      background: white;
+      padding: 2rem 2.5rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+      width: 100%;
+    }
+
+    h1 {
+      color: #1976d2;
+      margin-bottom: 2rem;
+      text-align: center;
+      font-size: 2.5rem;
+    }
+
+    .test-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .test-item {
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      padding: 1rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(25, 118, 210, 0.1);
+      transition: box-shadow 0.3s ease;
+    }
+
+    .test-item:hover {
+      box-shadow: 0 8px 20px rgba(25, 118, 210, 0.3);
+    }
+
+    .test-info {
+      max-width: 70%;
+    }
+
+    .test-info h2 {
+      color: #1976d2;
+      font-size: 1.25rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .test-info p {
+      font-size: 1rem;
+      color: #444;
+    }
+
+    .start-btn {
+      background-color: #1976d2;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .start-btn:hover {
+      background-color: #125ea5;
+    }
+
+    /* Responsive */
+    @media (max-width: 480px) {
+      .test-info {
+        max-width: 60%;
+      }
+
+      .test-info h2 {
+        font-size: 1.1rem;
+      }
+
+      .test-info p {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Təcrübə Testləri</h1>
+
+    <div class="test-list">
+
+      <div class="test-item">
+        <div class="test-info">
+          <h2>Riyaziyyat Testi</h2>
+          <p>Əsas riyaziyyat mövzularını əhatə edən sınaq testi.</p>
+        </div>
+        <button onclick="startTest('riyaziyyat')">Riyaziyyat Testini Başla</button>
+    </div>
+
+      <div class="test-item">
+        <div class="test-info">
+          <h2>Azərbaycan Dili və Ədəbiyyatı Testi</h2>
+          <p>Dil qaydaları və ədəbiyyat mövzularını yoxlamaq üçün test.</p>
+        </div>
+        <button onclick="startTest('dil')">Azərbaycan Dili Testini Başla</button>
+    </div>
+
+      <div class="test-item">
+        <div class="test-info">
+          <h2>Fizika Testi</h2>
+          <p>Fizikanın əsas qanunları və nəzəriyyələrini sınaqdan keçir.</p>
+        </div>
+        <button onclick="startTest('fizika')">Fizika Testini Başla</button>
+    </div>
+
+    </div>
+  </main>
+  
+  <script>
+    function startTest(testKey) {
+      window.location.href = `test.html?test=${testKey}`;
+    }
+  </script>  
+      <a href="veb_html.html">← Geri qayıt</a>
+</body>
+</html>
+
