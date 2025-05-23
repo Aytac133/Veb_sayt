@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mentorluq Proqramları - Təhsil Portalı</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9fcfb;
+      color: #2c3e50;
+      padding: 30px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    h1 {
+      color: #28a745;
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+    p.description {
+      font-size: 1.2rem;
+      color: #555;
+      max-width: 650px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    section.mentors {
+      margin-top: 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+      gap: 25px;
+    }
+    .mentor-card {
+      background: white;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease;
+    }
+    .mentor-card:hover {
+      transform: translateY(-6px);
+    }
+    .mentor-photo {
+      width: 100%;
+      height: 160px;
+      border-radius: 12px;
+      object-fit: cover;
+      margin-bottom: 15px;
+      background-color: #ddd;
+    }
+    .mentor-name {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #28a745;
+      margin-bottom: 5px;
+    }
+    .mentor-specialty {
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 10px;
+    }
+    .mentor-bio {
+      font-size: 0.95rem;
+      color: #444;
+      line-height: 1.4;
+    }
+    .signup-section {
+      margin-top: 50px;
+      text-align: center;
+      background: #e6f4ea;
+      padding: 25px 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(40, 167, 69, 0.15);
+    }
+    .signup-section h2 {
+      color: #28a745;
+      margin-bottom: 15px;
+      font-size: 1.8rem;
+    }
+    .signup-section p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 20px;
+    }
+    .signup-button {
+      background-color: #28a745;
+      color: white;
+      padding: 14px 40px;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .signup-button:hover {
+      background-color: #1e7e34;
+    }
+    a.back-link {
+      display: inline-block;
+      margin-top: 40px;
+      color: #28a745;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    a.back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌟 Mentorluq Proqramları</h1>
+    <p class="description">
+      Uğurlu tələbələr və məzunlar ilə birbaşa əlaqə quraraq bilik və təcrübənizi artırın. Mentorluq proqramlarımızda iştirak edərək peşəkar və şəxsi inkişafınıza töhfə verin.
+    </p>
+  </header>
+
+  <section class="mentors">
+    <div class="mentor-card">
+      <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Mentor foto" class="mentor-photo" />
+      <div class="mentor-name">Əli Məmmədov</div>
+      <div class="mentor-specialty">Proqramlaşdırma və Data Analitika</div>
+      <div class="mentor-bio">
+        Əli 10 ildən artıq proqramlaşdırma təcrübəsinə malikdir və müxtəlif data analitika layihələrində çalışmışdır. Tələbələrə layihə əsaslı öyrənmə metodları ilə dəstək verir.
+      </div>
+    </div>
+    <div class="mentor-card">
+      <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Mentor foto" class="mentor-photo" />
+      <div class="mentor-name">Leyla Hüseynova</div>
+      <div class="mentor-specialty">Karyera İnkişafı və Liderlik</div>
+      <div class="mentor-bio">
+        Leyla bir çox beynəlxalq şirkətdə menecer və lider kimi fəaliyyət göstərmişdir. Tələbələrə karyera hədəflərinin müəyyənləşdirilməsi və liderlik bacarıqlarının inkişafı mövzusunda kömək edir.
+      </div>
+    </div>
+    <div class="mentor-card">
+      <img src="https://randomuser.me/api/portraits/men/56.jpg" alt="Mentor foto" class="mentor-photo" />
+      <div class="mentor-name">Orxan Rzayev</div>
+      <div class="mentor-specialty">Startap və Sahibkarlıq</div>
+      <div class="mentor-bio">
+        Orxan startapların yaradılması və inkişafı sahəsində təcrübəlidir. Tələbələrə ideyanın gerçəkləşdirilməsi və biznes planlaşdırılması mövzusunda dəstək verir.
+      </div>
+    </div>
+  </section>
+
+  <section class="signup-section">
+    <h2>Mentorluq Proqramına Qeydiyyat</h2>
+    <p>Mentorluq proqramında iştirak etmək istəyirsinizsə, aşağıdakı düyməyə klikləyin və əlaqə formasını doldurun.</p>
+    <a href="mailto:mentor@tehsilportal.az?subject=Mentorluq Proqramına Qeydiyyat" class="signup-button">Qeydiyyat üçün Yazın</a>
+  </section>
+
+  <a href="heyat.html" class="back-link">← Geri Tələbə Həyatına</a>
+</body>
+</html>

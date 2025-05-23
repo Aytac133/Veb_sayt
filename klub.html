@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tələbə Klubları - Təhsil Portalı</title>
+  <style>
+    /* Bədən və əsas konteyner */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9fcff;  /* Açıq, sakit fond */
+      color: #2c3e50; /* Tünd mavi-göy */
+      margin: 0;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+    }
+    main {
+      max-width: 750px;
+      width: 100%;
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 12px 24px rgba(0, 128, 128, 0.12);
+      padding: 40px 50px;
+      box-sizing: border-box;
+      line-height: 1.65;
+    }
+    /* Başlıq */
+    header h1 {
+      color: #27ae60; /* Telebeler.html dəki yaşıl rəng */
+      font-size: 2.8rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      border-left: 6px solid #27ae60;
+      padding-left: 15px;
+      letter-spacing: 0.02em;
+    }
+    /* Paraqraflar */
+    p {
+      font-size: 1.15rem;
+      margin-bottom: 1.6rem;
+      color: #34495e; /* Rahat oxunan tünd boz-mavi */
+    }
+    /* Siyahı */
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 2rem;
+    }
+    ul li {
+      position: relative;
+      padding-left: 30px;
+      margin-bottom: 1rem;
+      font-weight: 600;
+      color: #16a085;
+      font-size: 1.12rem;
+      transition: color 0.3s ease;
+    }
+    ul li::before {
+      content: "▹";
+      position: absolute;
+      left: 0;
+      top: 2px;
+      color: #27ae60;
+      font-weight: 900;
+      font-size: 1.3rem;
+      line-height: 0;
+    }
+    ul li:hover {
+      color: #2ecc71;
+      cursor: default;
+    }
+    /* Geri düyməsi */
+    a.back-btn {
+      display: inline-block;
+      background-color: #27ae60;
+      color: white;
+      padding: 14px 32px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.1rem;
+      box-shadow: 0 6px 15px rgba(39, 174, 96, 0.3);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    a.back-btn:hover {
+      background-color: #219150;
+      box-shadow: 0 8px 20px rgba(33, 145, 80, 0.5);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>🤝 Tələbə Klubları</h1>
+    </header>
+
+    <p>
+      Universitetdə müxtəlif sahələr üzrə fəaliyyət göstərən tələbə klubları:
+    </p>
+
+    <ul>
+      <li>İT Klubu – Proqramlaşdırma, veb inkişaf və texnologiyalar.</li>
+      <li>Debat Klubu – Münazirə və danışıq bacarıqları üzərində təcrübə.</li>
+      <li>Musiqi Klubu – Musiqi ifa etmək və yaradıcılıqla məşğul olmaq.</li>
+      <li>İdman Klubu – Fərqli idman növləri üzrə fəaliyyətlər.</li>
+      <li>Elm və Texnologiya Klubu – Elmi layihələr və tədqiqatlar.</li>
+    </ul>
+
+    <p>
+      Hər bir klub öz üzvlərinə həm sosial, həm də peşəkar inkişaf üçün geniş imkanlar yaradır.
+    </p>
+
+    <a href="heyat.html" class="back-btn">← Geri Tələbə Həyatına</a>
+  </main>
+</body>
+</html>
