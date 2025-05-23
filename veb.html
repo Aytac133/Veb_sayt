@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="veb_style.css">
+    <title>Təhsil Portalı | Abituriyentlər və Tələbələr</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Təhsil Portalı</span>
+            </div>
+            <nav>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul id="navMenu">
+                    <li><a href="#home">Ana Səhifə</a></li>
+                    <li><a href="#targets">Üzvlər</a></li>
+                    <li><a href="#features">Xüsusiyyətlər</a></li>
+                    <li><a href="#contact">Əlaqə</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Təhsil Portalına Xoş Gəlmisiniz</h1>
+            <p>Abituriyentlər və tələbələr üçün bütün resurslar bir yerdə</p>
+            <div>
+                <a href="#targets" class="btn">Kəşf edin</a>
+                <a href="#" class="btn btn-secondary" id="registerBtn">Qeydiyyat</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Groups Section -->
+    <section class="main-section" id="targets">
+        <div class="container">
+            <div class="section-title">
+                <h2>Üzvlər</h2>
+            </div>
+            <div class="target-groups">
+                <!-- Abituriyent Card -->
+                <div class="target-card abiturient">
+                    <div class="target-header">
+                        <i class="fas fa-user-graduate"></i>
+                        <h3>Abituriyentlər</h3>
+                        <p>Universitetə qəbul üçün lazım olan bütün məlumatlar</p>
+                    </div>
+                    <div class="target-body">
+                        <ul>
+                            <li><i class="fas fa-check"></i> İmtahan hazırlıq materialları</li>
+                            <li><i class="fas fa-check"></i> Universitetlər haqqında məlumat</li>
+                            <li><i class="fas fa-check"></i> Qəbul qaydaları</li>
+                            <li><i class="fas fa-check"></i> İxtisasların təqdimatı</li>
+                            <li><i class="fas fa-check"></i> Təcrübə testləri</li>
+                        </ul>
+                        <a href="veb_html.html" class="btn" id="abiturientBtn"> Daxil ol</a>
+                    </div>
+                </div>
+
+                <!-- Student Card -->
+                <div class="target-card student">
+                    <div class="target-header">
+                        <i class="fas fa-user-tie"></i>
+                        <h3>Tələbələr</h3>
+                        <p>Təhsiliniz boyu lazım olan bütün resurslar</p>
+                    </div>
+                    <div class="target-body">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Dərs materialları</li>
+                            <li><i class="fas fa-check"></i> Elektron kitabxana</li>
+                            <li><i class="fas fa-check"></i> Təqvim və planlaşdırıcı</li>
+                            <li><i class="fas fa-check"></i> Staj və karyera imkanları</li>
+                            <li><i class="fas fa-check"></i> Tələbə həyatı</li>
+                        </ul>
+                        <a href="telebeler.html" class="btn btn-secondary" id="studentBtn">Daxil ol</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="main-section features" id="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Xüsusiyyətlərimiz</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-book-open"></i>
+                    <h3>Geniş Kitabxana</h3>
+                    <p>1000-dən çox dərslik, dərs vəsaiti və elmi məqalələrə çıxış</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Təhlil Alətləri</h3>
+                    <p>İmtahan nəticələrinizin təhlili və inkişaf dinamikası</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Mütəxəssislərlə Əlaqə</h3>
+                    <p>Peşəkar müəllimlər və məsləhətçilərlə birbaşa əlaqə</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Təqvim</h3>
+                    <p>Bütün vacib tarixlər və hadisələr üçün fərdi təqvim</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobil Dostu</h3>
+                    <p>İstənilən cihazdan rahat istifadə imkanı</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>24/7 Dəstək</h3>
+                    <p>Hər zaman sizin xidmətinizdə olan texniki dəstək komandası</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Təhsil Portalı</h3>
+                    <p>Təhsilinizin hər mərhələsində sizə dəstək olmaq üçün buradayıq. Abituriyentlər və tələbələr üçün bütün resurslar bir yerdə.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Sürətli Keçidlər</h3>
+                    <ul>
+                        <li><a href="#home">Ana Səhifə</a></li>
+                        <li><a href="#targets">Üzvlər</a></li>
+                        <li><a href="#features">Xüsusiyyətlər</a></li>
+                        <li><a href="#">Xəbərlər</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Əlaqə</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Baku, Azerbaijan</li>
+                        <li><i class="fas fa-phone"></i> +994 12 345 67 89</li>
+                        <li><i class="fas fa-envelope"></i> info@tehsilportali.az</li>
+                        <li><i class="fas fa-clock"></i> B.e - Ş.b: 9:00 - 18:00</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Bülleten</h3>
+                    <p>Yeni xüsusiyyətlər və xəbərlər haqqında məlumat almaq üçün abunə olun.</p>
+                    <form id="newsletterForm">
+                        <div class="form-group">
+                            <input type="email" placeholder="E-poçt ünvanınız" required>
+                        </div>
+                        <button type="submit" class="btn">Abunə ol</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Təhsil Portalı. Bütün hüquqlar qorunur.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Register Modal -->
+    <div class="modal" id="registerModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Qeydiyyat</h3>
+                <button class="close-modal" id="closeRegisterModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="registerForm">
+                    <div class="form-group">
+                        <label for="userType">İstifadəçi növü</label>
+                        <select id="userType" required>
+                            <option value="">Seçin</option>
+                            <option value="abiturient">Abituriyent</option>
+                            <option value="student">Tələbə</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="fullName">Tam ad</label>
+                        <input type="text" id="fullName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-poçt</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Şifrə</label>
+                        <input type="password" id="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">Şifrəni təsdiqlə</label>
+                        <input type="password" id="confirmPassword" required>
+                    </div>
+                    <button type="submit" class="btn">Qeydiyyatdan keç</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="loginModalTitle">Daxil ol</h3>
+                <button class="close-modal" id="closeLoginModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="loginEmail">E-poçt</label>
+                        <input type="email" id="loginEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Şifrə</label>
+                        <input type="password" id="loginPassword" required>
+                    </div>
+                    <div class="form-group text-center">
+                        <button type="submit" class="btn">Daxil ol</button>
+                        <p class="mt-1">Hesabınız yoxdur? <a href="#" id="showRegisterFromLogin">Qeydiyyatdan keç</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+      <script src="veb_script.js"></script>
+
+</body>
+</html>
